@@ -13,15 +13,13 @@ print("The array is: \n")
 print(f"{array_numbers}")
 
 #Exercise 2
-nombre_archivo = input("Enter the name of the text file: ")
+name_archivo = input("Enter the name of the text file: ")
 
 try:
-    with open(nombre_archivo, 'r') as file:
-        contenido = file.read()
-        # Se convierte el texto del archivo a una lista de números
-        numeros_archivo = [float(x) for x in contenido.split()]
-        print("\n--- FILE RESULTS ---")
-        print(f"Numbers read from '{nombre_archivo}':", numeros_archivo)
+    with open(name_archivo, 'r') as file:
+        content = file.read()
+        numbers_archivo = [float(x) for x in content.split()]
+        print(f"Numbers read from '{name_archivo}':", numbers_archivo)
 
 except FileNotFoundError:
-    print(f"\nError: The file '{nombre_archivo}' does not exist.")
+    print(f" The file '{name_archivo}' does not exist.")
