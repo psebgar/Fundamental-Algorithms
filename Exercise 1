@@ -1,0 +1,13 @@
+# Exercise 1 
+input_secuencia = input("Enter the sequence of numbers: ")
+sequence = [float(x) for x in input_secuencia.split()]
+
+size = int(input("Introduce the dimensions of the array of numbers: "))
+array_numbers = []
+
+for i in range(size):
+    number = int(input(f"Enter the number in position ({i+1}): "))
+    array_numbers.append(number)
+
+print("The array is: \n")
+print(f"{array_numbers}")
